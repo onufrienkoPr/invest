@@ -36,10 +36,10 @@ button.addMoney:hover {
     background-color: rgba(23, 108, 212, 0.24);
 }
 .logo {
-    padding-top: 3px;
+    padding-top: 2px;
     margin-right: 10px;
     border-radius: 50%;
-    width: 38px;
+    width: 50px;
 }
 .price {
     margin-right: 5px;
