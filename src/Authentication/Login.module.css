@@ -1,0 +1,50 @@
+.loginBlock {
+    margin-right: 10px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.login {
+    font-family: Geometria-Light, sans-serif;
+    background-color: #f2f4f7;
+    width: 73px;
+    height: 40px;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+}
+.addMoney{
+    margin-right: 30px;
+    padding-bottom: 5px;
+    color: #176CD4;
+    font-size: 26px;
+    background-color: rgba(23, 108, 212, 0.12);
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.loginWord {
+    color: #000000;
+}
+
+button.addMoney:hover {
+    background-color: rgba(23, 108, 212, 0.24);
+}
+.logo {
+    padding-top: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 38px;
+}
+.price {
+    margin-right: 5px;
+    font-family: Geometria;
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+}

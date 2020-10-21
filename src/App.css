@@ -10,28 +10,19 @@
   min-height: 100vh;
 }
 
-.wrapper {
+.app-wrapper {
   width: 1250px;
   padding: 0 25px;
   margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  "h"
+  "c";
 }
 
-.header{
-  width: 1250px;
-  padding: 22px 0;
-  border: 2px solid black;
-  display: flex;
+.app-wrapper_content{
+  grid-area: c;
+  border: 2px solid blue;
 }
 
-.header_main-menu{
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-}
-
-li{
-  margin: 0 10px;
-  list-style-type: none;
-  display:inline-block;
-}
 
