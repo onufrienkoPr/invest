@@ -4,11 +4,11 @@ import ContentContainer from "../../Content/ContentConteiner";
 
 const InvestmentsContainer = () => {
     let state = {
-        text: 'Лучшее'
+        text: 'Лучшие инвестиционные идеи'
     }
     return <>
         <ContentContainer state={state}/>
-        <h3><div>Лучшее</div></h3>
+        <h3><div>Лучшие инвестиционные идеи</div></h3>
     </>
 }
 

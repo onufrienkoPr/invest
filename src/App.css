@@ -22,11 +22,10 @@
 
 .app-wrapper_content{
   grid-area: c;
-  border: 2px solid #c3c2c2;
   width: 960px;
   position: relative;
   margin: 0 auto;
-  /*border-left: 1px solid black;*/
+  /*border: 2px solid #c3c2c2;*/
   /*height: 1500px;*/
 }
 
