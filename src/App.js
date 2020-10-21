@@ -17,7 +17,7 @@ function App() {
                     </div>
                     <div className="header_user-menu">
                         <div>
-                            <button>Вход</button>
+                            <button>Выход</button>
                         </div>
                     </div>
                 </div>
