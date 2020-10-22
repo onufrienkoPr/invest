@@ -7,7 +7,7 @@ import IPOContainer from "./components/Navbar_content/IPO/IPOContainer";
 import PreIPOContainer from "./components/Navbar_content/PreIPOContainer/PreIPOContainer";
 import OTCContainer from "./components/Navbar_content/OTCContainer/OTCContainer";
 import StocksContainer from "./components/Navbar_content/StocksContainer/StocksContainer";
-import MyInventsContainer from "./components/Navbar_content_MyInvents/MyInvents/MyInventsContainer";
+import MyInvestsContainer from "./components/Navbar_content_MyInvents/MyInvents/MyInventsContainer";
 import ArhiveContainer from "./components/Navbar_content_MyInvents/Archive/ArchiveContainer";
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
                             <Route exact path='/investments'
                                    render={() => <InvestmentsContainer/>}/>
                             <Route path={'/investments/open-investments'}
-                                   render={() => <MyInventsContainer/>}/>
+                                   render={() => <MyInvestsContainer/>}/>
                             <Route path={'/investments/ipo'}
                                    render={() => <IPOContainer/>}/>
                             <Route path={'/investments/pre-ipo'}

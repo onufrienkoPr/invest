@@ -1,12 +1,12 @@
 import React from 'react';
-import ContentMyInvents from "../../LinksMyInvests/LinksMyInvests";
+import LinksMyInvests from "../../LinksMyInvests/LinksMyInvests";
 
 const ArhiveContainer = () => {
     let state = {
         text: 'Архив инвестиций'
     }
     return <>
-        <ContentMyInvents state={state}/>
+        <LinksMyInvests state={state}/>
         <h3><div>Архив инвестиций</div></h3>
     </>
 }

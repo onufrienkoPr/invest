@@ -1,0 +1,125 @@
+.idea_cards{
+    position: relative;
+    height: 430px;
+    width: 300px;
+    background-color: #F2F5F7;
+    border-radius: 10px;
+    padding-top: 2px;
+    cursor: pointer;
+    color: #000;
+    perspective: 300px;
+    text-align: center;
+}
+.irisk {
+    margin: 15px;
+    float: right;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #ece3c7;
+    cursor: pointer;
+}
+.irisk:hover {
+    background-color: #EA9900;
+}
+.itype{
+    font-family: Geometria;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 1.3px;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 100px;
+    background-color: #F2F5F7;
+    margin-top: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.ilogo{
+    background-color: #F2F5F7;
+    margin-bottom: 30px;
+}
+.ilogo img{
+    background-color: #F2F5F7;
+    display: inline-block;
+    max-width: 140px;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.iname{
+    margin-bottom: 17px;
+    background-color: #F2F5F7;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+.idescription {
+    background-color: #F2F5F7;
+    font-family: Geometria;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.iline{
+    margin: 20px 30px 10px 30px ;
+    color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ipricestart{
+    padding: 0 30px;
+    background-color: #F2F5F7;
+    display: flex;
+    margin-bottom: 30px;
+}
+.iprice{
+    text-align: left;
+    font-family: Geometria;
+    font-size: 15px;
+    font-weight: 600;
+    color: #999999;
+    width: 156px;
+    background-color: #F2F5F7;
+}
+.iprices{
+    text-align: left;
+    background-color: #F2F5F7;
+    color: #000000;
+}
+.istart{
+    text-align: left;
+    font-family: Geometria;
+    font-weight: 600;
+    color: #999999;
+    width: 95px;
+    background-color: #F2F5F7;
+}
+.istarts{
+    text-align: left;
+    background-color: #F2F5F7;
+    color: #000000;
+}
+.ibutton {
+    background-color: #F2F5F7;
+}
+.ibutton button {
+    font-family: Geometria;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 14px;
+    border: none;
+    background-color: rgba(49, 135, 238, 0.1);
+    color: #176CD4;
+    cursor: pointer;
+}
+.ibutton button:hover{
+    background-color: #bdcaec;
+}

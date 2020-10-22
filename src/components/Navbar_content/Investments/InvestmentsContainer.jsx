@@ -1,29 +1,27 @@
 import React from 'react';
-import ContentContainer from "../../LinksMainInvests/LinksMainInvests";
-import s from './Investments.module.css'
-import spacex from "../../../assets/images/spacex.svg"
+import LinksMainInvests from "../../LinksMainInvests/LinksMainInvests";
+import ContentCards from "./Content_cards/Content_cards";
+import s from "./Investments.module.css";
 
 const InvestmentsContainer = () => {
     let state = {
-        text: 'Лучшие инвестиционные идеи'
+        text: 'Лучшие инвестиционные идеи',
+        cards: [{id:1 ,itype: "IPO",iname: "Tesla",idescription: "Автомобили",iprice: "15,5"},
+            {id:2, itype: "OTC",iname: "McDonalds",idescription: "Ресторанное заведение",iprice: "17,5"},
+            {id:3, itype: "Pre-IPO",iname: "KFC",idescription: "Хавка",iprice: "100"},
+            {id:4 ,itype: "IPO",iname: "Tesla",idescription: "Автомобили",iprice: "15,5"},
+            {id:5, itype: "OTC",iname: "McDonalds",idescription: "Ресторанное заведение",iprice: "17,5"},
+            {id:6, itype: "Pre-IPO",iname: "KFC",idescription: "Хавка",iprice: "100"}]
     }
+
+    let Cards = state.cards.map(c => <ContentCards id={c.id} itype={c.itype} iname={c.iname}
+                                                   idescription={c.idescription} iprice={c.iprice}/>);
+
     return <>
-        <ContentContainer state={state}/>
+        <LinksMainInvests state={state}/>
         <div className={s.idea_list}>
             <div className={s.idea_list_cards}>
-                <div className={s.idea_cards}>
-                    <div className={s.irisk}></div>
-                    <div className={s.itype}>IPO</div>
-                    <div className={s.ilogo}><img src={spacex}/></div>
-                    <div className={s.iname}>SpaceX</div>
-                    <div className={s.idescription}>Полёты в космос и спутниковый интернет</div>
-                    <div className={s.iline}></div>
-                    <div className={s.ipricestart}>
-                        <div className={s.iprice}>Прогноз дохода<div className={s.iprices}>90 % годовых</div></div>
-                        <div className={s.istart}>Старт<div className={s.istarts}>21 окт 19:00</div></div>
-                    </div>
-                    <div className={s.ibutton}><button>Инвестировать от 50 $</button></div>
-                </div>
+                {Cards}
             </div>
         </div>
     </>

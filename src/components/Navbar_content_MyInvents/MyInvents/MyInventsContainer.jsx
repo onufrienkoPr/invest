@@ -1,13 +1,17 @@
 import React from 'react';
-import ContentMyInvents from "../../LinksMyInvests/LinksMyInvests";
+import LinksMyInvests from "../../LinksMyInvests/LinksMyInvests";
+import s from './MyInvestsContainer.module.css'
+import error from './../../../assets/images/error.png'
 
-const MyInventsContainer = () => {
+const MyInvestsContainer = () => {
     let state = {
         text: 'Мои инвестиции'
     }
     return <>
-        <ContentMyInvents state={state}/>
-        <h3><div>Мои инвестиции</div></h3>
+        <LinksMyInvests state={state}/>
+        <div className={s.myInvests}>
+            <img className={s.logoError} src={error}/>
+        </div>
     </>
 }
-export default MyInventsContainer;
+export default MyInvestsContainer;

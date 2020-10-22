@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentContainer from "../../LinksMainInvests/LinksMainInvests";
+import LinksMainInvests from "../../LinksMainInvests/LinksMainInvests";
 
 
 const OTCContainer = () => {
@@ -7,7 +7,7 @@ const OTCContainer = () => {
         text: 'Инвестиции OTC'
     }
     return <>
-        <ContentContainer state={state}/>
+        <LinksMainInvests state={state}/>
         <h3><div>Инвестиции OTC</div></h3>
     </>
 }
