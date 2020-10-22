@@ -21,7 +21,6 @@
 }
 
 .app-wrapper_content{
-  grid-area: c;
   width: 960px;
   position: relative;
   margin: 0 auto;

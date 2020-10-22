@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import './ContentMyInventsContainer.css'
+import './LinksMyInvests.css'
 
-const ContentMyInvents = (props) => {
+const LinksMyInvests = (props) => {
     return <div>
         <h1 className="page-main-title__title">{props.state.text}</h1>
         <div className="mytable">
@@ -15,4 +15,4 @@ const ContentMyInvents = (props) => {
 }
 
 
-export default ContentMyInvents;
+export default LinksMyInvests;

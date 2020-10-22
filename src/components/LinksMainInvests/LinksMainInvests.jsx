@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import './ContentContainer.css'
+import './LinksMainInvests.css'
 
-const ContentContainer = (props) => {
+const LinksMainInvests = (props) => {
     return <div>
         <h1 className="page-main-title__title">{props.state.text}</h1>
         <div className="table">
@@ -17,4 +17,4 @@ const ContentContainer = (props) => {
     </div>
 }
 
-export default ContentContainer;
+export default LinksMainInvests;

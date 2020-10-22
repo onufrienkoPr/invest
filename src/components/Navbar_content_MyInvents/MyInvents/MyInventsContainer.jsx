@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentMyInvents from "../../ContentMyInvents/ContentMyInvents";
+import ContentMyInvents from "../../LinksMyInvests/LinksMyInvests";
 
 const MyInventsContainer = () => {
     let state = {

@@ -3,7 +3,6 @@
     padding: 22px 0;
     /*border: 2px solid black;*/
     display: flex;
-    grid-area: h;
 }
 .name-site{
     margin-left: 7px;

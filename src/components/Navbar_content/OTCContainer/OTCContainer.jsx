@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentContainer from "../../Content/ContentConteiner";
+import ContentContainer from "../../LinksMainInvests/LinksMainInvests";
 
 
 const OTCContainer = () => {

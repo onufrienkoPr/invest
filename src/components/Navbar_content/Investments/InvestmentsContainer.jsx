@@ -1,6 +1,6 @@
 import React from 'react';
-import ContentContainer from "../../Content/ContentConteiner";
-
+import ContentContainer from "../../LinksMainInvests/LinksMainInvests";
+import './Investments.css'
 
 const InvestmentsContainer = () => {
     let state = {
@@ -8,7 +8,16 @@ const InvestmentsContainer = () => {
     }
     return <>
         <ContentContainer state={state}/>
-        <h3><div>Лучшие инвестиционные идеи</div></h3>
+        <div className="idea_list">
+            <div className="idea_list-cards">
+                <div className="idea_cards">1 контейнер</div>
+                <div className="idea_cards">2 контейнер</div>
+                <div className="idea_cards">3 контейнер</div>
+                <div className="idea_cards">4 контейнер</div>
+                <div className="idea_cards">5 контейнер</div>
+                <div className="idea_cards">6 контейнер</div>
+            </div>
+        </div>
     </>
 }
 
