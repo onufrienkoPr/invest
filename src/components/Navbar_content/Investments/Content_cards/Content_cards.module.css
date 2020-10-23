@@ -121,5 +121,6 @@
     cursor: pointer;
 }
 .ibutton button:hover{
-    background-color: #bdcaec;
+    background-color: #3c6bee;
+    color: #ffffff;
 }

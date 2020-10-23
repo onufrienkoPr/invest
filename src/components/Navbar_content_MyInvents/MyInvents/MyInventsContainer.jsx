@@ -11,6 +11,12 @@ const MyInvestsContainer = () => {
         <LinksMyInvests state={state}/>
         <div className={s.myInvests}>
             <img className={s.logoError} src={error}/>
+            <div className={s.textError}>Войдите, чтобы увидеть инвестиции</div>
+            <div className={s.textErrorTwo}>В этот раздел попадают ваши открытые инвестиции</div>
+            <div className={s.auth}>
+                <div className={s.input}><button>Войти</button></div>
+                <div className={s.inputRegistration}><button>Зарегистрироваться</button></div>
+            </div>
         </div>
     </>
 }
