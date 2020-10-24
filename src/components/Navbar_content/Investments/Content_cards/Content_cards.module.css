@@ -1,4 +1,4 @@
-.idea_cards{
+.idea_cards {
     position: relative;
     height: 430px;
     width: 300px;
@@ -10,6 +10,32 @@
     perspective: 300px;
     text-align: center;
 }
+
+.idea_cards:hover .irisk {
+    background-color: #EA9900;
+    transition: all 0.8s ease;
+}
+
+.idea_cards:hover button {
+    background-color: #3c6bee;
+    color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+.idea_cards:hover img{
+    transform: rotate3d(0,2,0,15deg);
+    transition: all 0.8s ease;
+}
+
+/*.irisk:hover {*/
+/*    background-color: #EA9900;*/
+/*}*/
+
+/*.ibutton button:hover{*/
+/*    background-color: #3c6bee;*/
+/*    color: #ffffff;*/
+/*}*/
+
 .irisk {
     margin: 15px;
     float: right;
@@ -19,10 +45,8 @@
     background-color: #ece3c7;
     cursor: pointer;
 }
-.irisk:hover {
-    background-color: #EA9900;
-}
-.itype{
+
+.itype {
     font-family: Geometria;
     color: rgba(0, 0, 0, 0.5);
     letter-spacing: 1.3px;
@@ -35,19 +59,22 @@
     text-transform: uppercase;
     margin-bottom: 35px;
 }
-.ilogo{
+
+.ilogo {
     background-color: #F2F5F7;
     margin-bottom: 30px;
 }
-.ilogo img{
+
+.ilogo img {
     background-color: #F2F5F7;
     display: inline-block;
     max-width: 140px;
-    min-height: 70px;
-    max-height: 70px;
+    min-height: 77px;
+    max-height: 77px;
+    transition: all 0.8s ease;
 }
 
-.iname{
+.iname {
     margin-bottom: 17px;
     background-color: #F2F5F7;
     font-size: 22px;
@@ -56,6 +83,7 @@
     color: #000;
     font-family: sans-serif;
 }
+
 .idescription {
     background-color: #F2F5F7;
     font-family: Geometria;
@@ -63,21 +91,23 @@
     font-size: 15px;
     margin-bottom: 25px;
 }
-.iline{
-    margin: 20px 30px 10px 30px ;
+
+.iline {
+    margin: 20px 30px 10px 30px;
     color: rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.05);
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.ipricestart{
+.ipricestart {
     padding: 0 30px;
     background-color: #F2F5F7;
     display: flex;
     margin-bottom: 30px;
 }
-.iprice{
+
+.iprice {
     text-align: left;
     font-family: Geometria;
     font-size: 15px;
@@ -86,12 +116,14 @@
     width: 156px;
     background-color: #F2F5F7;
 }
-.iprices{
+
+.iprices {
     text-align: left;
     background-color: #F2F5F7;
     color: #000000;
 }
-.istart{
+
+.istart {
     text-align: left;
     font-family: Geometria;
     font-weight: 600;
@@ -99,14 +131,17 @@
     width: 95px;
     background-color: #F2F5F7;
 }
-.istarts{
+
+.istarts {
     text-align: left;
     background-color: #F2F5F7;
     color: #000000;
 }
+
 .ibutton {
     background-color: #F2F5F7;
 }
+
 .ibutton button {
     font-family: Geometria;
     font-size: 15px;
@@ -119,8 +154,5 @@
     background-color: rgba(49, 135, 238, 0.1);
     color: #176CD4;
     cursor: pointer;
-}
-.ibutton button:hover{
-    background-color: #3c6bee;
-    color: #ffffff;
+    transition: all 0.8s ease;
 }
