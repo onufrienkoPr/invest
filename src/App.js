@@ -3,7 +3,7 @@ import './App.css';
 import { Switch, Route} from "react-router-dom";
 import InvestmentsContainer from "./components/Navbar_content/Investments/InvestmentsContainer";
 import Header from "./components/Header/Header";
-import IPOContainer from "./components/Navbar_content/IPO/IPOContainer";
+import IPOContainer from "./components/Navbar_content/Investments/IPO/IPOContainer";
 import PreIPOContainer from "./components/Navbar_content/PreIPOContainer/PreIPOContainer";
 import OTCContainer from "./components/Navbar_content/OTCContainer/OTCContainer";
 import StocksContainer from "./components/Navbar_content/StocksContainer/StocksContainer";
