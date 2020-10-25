@@ -12,7 +12,7 @@ const IPOContainer = (props) => {
                                                    idescription={c.idescription} iprice={c.iprice} />}});
 
     return <>
-        <LinksMainInvests state={state}/>
+        <LinksMainInvests state={state.text[1]}/>
         <div className={s.idea_list}>
             <div className={s.idea_list_cards}>
                 {Cards}

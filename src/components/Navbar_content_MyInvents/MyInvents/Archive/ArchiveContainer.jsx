@@ -1,5 +1,5 @@
 import React from 'react';
-import LinksMyInvests from "../../LinksMyInvests/LinksMyInvests";
+import LinksMyInvests from "../../../LinksMyInvests/LinksMyInvests";
 
 const ArhiveContainer = () => {
     let state = {

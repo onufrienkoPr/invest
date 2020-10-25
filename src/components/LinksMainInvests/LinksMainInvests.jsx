@@ -4,7 +4,7 @@ import './LinksMainInvests.css'
 
 const LinksMainInvests = (props) => {
     return <div>
-        <h1 className="page-main-title__title">{props.state.text}</h1>
+        <h1 className="page-main-title__title">{props.state}</h1>
         <div className="table">
             <div className="table_items">
                 <NavLink className="item" to={'/investments'} exact activeClassName="change">Лучшие</NavLink>

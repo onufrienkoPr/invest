@@ -11,7 +11,7 @@ const InvestmentsContainer = (props) => {
                                                    idescription={c.idescription} iprice={c.iprice} />);
 
     return <>
-        <LinksMainInvests state={state}/>
+        <LinksMainInvests state={state.text[0]}/>
         <div className={s.idea_list}>
             <div className={s.idea_list_cards}>
                 {Cards}
