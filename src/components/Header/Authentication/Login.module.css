@@ -1,9 +1,22 @@
 .loginBlock {
-    margin-right: 10px;
+    width: 251px;
     float: right;
     display: flex;
     align-items: center;
+    position: relative;
 }
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.loginBlock .login {
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
 .login {
     font-family: Geometria-Light, sans-serif;
     background-color: #f2f4f7;
@@ -16,7 +29,8 @@
     border: 0;
     cursor: pointer;
 }
-.addMoney{
+
+.addMoney {
     cursor: pointer;
     margin-right: 30px;
     color: #176CD4;
@@ -36,12 +50,14 @@
 button.addMoney:hover {
     background-color: rgba(23, 108, 212, 0.24);
 }
+
 .logo {
     padding-top: 2px;
     margin-right: 10px;
     border-radius: 50%;
     width: 50px;
 }
+
 .price {
     margin-right: 5px;
     font-family: Geometria;
