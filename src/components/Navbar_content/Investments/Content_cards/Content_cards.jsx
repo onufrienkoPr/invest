@@ -1,9 +1,11 @@
 import React from "react";
 import s from './Content_cards.module.css'
 import spacex from "../../../../assets/images/spacex.svg";
+import {NavLink} from "react-router-dom";
 
 const ContentCards = (props) => {
-    return <div className={s.idea_cards}>
+    return <NavLink to={'/investments/idea/' + props.id}>
+       <div className={s.idea_cards}>
                 <div className={s.irisk}></div>
                 <div className={s.itype}>{props.itype}</div>
                 <div className={s.ilogo}><img src={spacex}/></div>
@@ -15,7 +17,7 @@ const ContentCards = (props) => {
                     <div className={s.istart}>Старт<div className={s.istarts}>20 ноября</div></div>
                 </div>
                 <div className={s.ibutton}><button>Инвестировать от 50 $</button></div>
-            </div>
+            </div></NavLink>
 }
 
 export default ContentCards;

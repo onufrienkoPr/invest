@@ -10,6 +10,7 @@ import StocksContainer from "./components/Navbar_content/Investments/Stocks/Stoc
 import MyInvestsContainer from "./components/Navbar_content_MyInvents/MyInvents/MyInventsContainer";
 import ArhiveContainer from "./components/Navbar_content_MyInvents/MyInvents/Archive/ArchiveContainer";
 import MainPage from "./components/MainPage/MainPage";
+import IdeaContainer from "./components/Navbar_content/Investments/Idea/IdeaContainer";
 
 const App = () => {
     return (
@@ -22,6 +23,8 @@ const App = () => {
                                render={() => <MainPage/>}/>
                         <Route exact path='/investments'
                                render={() => <InvestmentsContainer/>}/>
+                        <Route path='/investments/idea/:id?'
+                               render={() => <IdeaContainer/>}/>
                         <Route path={'/investments/open-investments'}
                                render={() => <MyInvestsContainer/>}/>
                         <Route path={'/investments/ipo'}

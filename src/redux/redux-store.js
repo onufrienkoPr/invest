@@ -1,8 +1,10 @@
 import {combineReducers, createStore} from 'redux';
 import cardsReducer from "./cards-reducer";
+import ideaReducer from "./idea-reducer";
 
 let reducer = combineReducers({
-    invests: cardsReducer
+    invests: cardsReducer,
+    ideas: ideaReducer
 });
 
 const store = createStore(reducer);

@@ -1,0 +1,46 @@
+import React from 'react';
+import spacex from "../../../../../assets/images/spacex.svg";
+import s from "./IdeaInfo.module.css"
+
+const IdeaInfo = (props) => {
+    return <>
+        <div className={s.idea_cards}>
+
+            <div className={s.inline}>
+
+                <div className={s.logodescname}>
+                    <div className={s.ilogo}><img src={spacex}/></div>
+                    <div className={s.namedesc}>
+                        <div className={s.iname}>{props.idea.iname}</div>
+                        <div className={s.idescription}>{props.idea.idescription}</div>
+                    </div>
+                </div>
+
+                <div className={s.typerisk}>
+                    <div className={s.itype}>{props.idea.itype}</div>
+                    <div className={s.irisk}></div>
+                </div>
+
+            </div>
+
+
+            <div className={s.iline}></div>
+            <div className={s.ipricestart}>
+                <div className={s.iprice}>Прогноз дохода
+                    <div className={s.iprices}>{props.idea.iprice}$</div>
+                </div>
+                <div className={s.istart}>Старт
+                    <div className={s.istarts}>20 ноября</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div className={s.toinvest}>Инвестировать в {props.idea.iname}</div>
+        <div className={s.ibutton}>
+            <button>Инвестировать от 50 $</button>
+        </div>
+    </>
+}
+
+export default IdeaInfo;
