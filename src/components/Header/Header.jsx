@@ -5,7 +5,7 @@ import logosite from "../../assets/images/logo.png"
 import './Header.css'
 
 const Header = () => {
-    return <div className="header">
+    return <div className="header" >
             <NavLink to={'/'}>
                 <div className="main-logo">
                     <div className="logo"><img src={logosite}/></div>

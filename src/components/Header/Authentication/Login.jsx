@@ -1,6 +1,9 @@
 import React from 'react';
 import s from './Login.module.css';
 import Modal from "./ModalComponent/Modal";
+import {Field, reduxForm} from "redux-form";
+import {required} from "../../../utils/validators/validators";
+import {Input} from "../../common/FormsControls/FormsControls";
 
 // class Login extends React.Component {
 //     // state = {
@@ -42,6 +45,10 @@ import Modal from "./ModalComponent/Modal";
 // }
 
 const Login = () => {
+
+    // const onSubmitFormData = (formData) => {// сюда собираются данные
+    //     props.login(formData.email, formData.password, formData.rememberMe)
+    // }
     const modalRef = React.useRef();
 
     const openModal = () =>{
@@ -49,15 +56,35 @@ const Login = () => {
     }
 
     return(
-        <div className={s.login}>
-            <button onClick={openModal}>Open Modal</button>
+        <div className={s.inline}>
+            <button className={s.login} onClick={openModal}>Вход</button>
             <Modal ref={modalRef}>
-                <h1>Modal Header</h1>
-                <p>KK</p>
-                <button onClick={()=> modalRef.current.close()}>Close</button>
+                <button className={s.modalbutton} onClick={()=> modalRef.current.close()}>x</button>
+                <div className={s.entryreg}>
+                    <p className={s.entryparagraph}>Вход</p>
+                    <p className={s.regparagraph}>Регистрация</p></div>
+                <LoginReduxForm />
             </Modal>
         </div>
     )
 }
+const LoginForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit} className={s.fullform}>
+            <div>
+                <Field placeholder={"Логин/Почта"} name={'email'} component={Input}/>
+            </div>
+            <div>
+                <Field placeholder={"Пароль"} name={'password'} component={Input}
+                       type={'password'}/>
+            </div>
+            <div>
+                <button className={s.entrybutton}>Вход</button>
+            </div>
+        </form>
+    )
+}
+
+const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 
 export default Login;

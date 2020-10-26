@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.loginBlock .login {
+.loginBlock {
     align-items: center;
     position: absolute;
     right: 0;
@@ -71,11 +71,12 @@ button.addMoney:hover {
 }
 
 .modal_wrapper{
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal_backdrop{
@@ -89,15 +90,65 @@ button.addMoney:hover {
 }
 
 .modal_box{
+    border-radius: 10px;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 30%;
-    width: 60%;
+    height: 564px;
+    width: 430px;
     background-color: white;
     overflow-y: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     z-index: 101;
     padding: 40px;
+}
+.modalbutton {
+    font-family: Geometria;
+    color: white;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    float: right;
+    background-color: #42f590;
+    border: 0;
+    outline: none;
+    width: 30px;
+    height: 30px;
+}
+.entryparagraph {
+    font-family: Consolas;
+    font-size: 36px;
+    font-weight: 600;
+}
+.regparagraph {
+    font-family: Geometria, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #42f590;
+    cursor: pointer;
+}
+.entryreg {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.entrybutton {
+    font-family: Geometria;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #42f590;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    width: 70px;
+    height: 40px;
 }

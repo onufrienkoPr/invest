@@ -1,0 +1,12 @@
+.formControl input {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 41, 91, 0.07);
+}
