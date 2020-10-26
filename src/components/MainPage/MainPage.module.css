@@ -1,0 +1,57 @@
+.main_page{
+
+}
+
+.main_page_table{
+    justify-content: center;
+    display: flex;
+    background-color: #F2F5F7;
+    padding: 10px 0;
+}
+.main_page_table_about{
+    position: relative;
+    display: flex;
+    height: 80px;
+}
+
+.main_page_table_to{
+    background-color: #F2F5F7;
+}
+
+.main_page_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.main_page_header{
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0;
+}
+
+.main_page_pictures{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+.main_page_macbook{
+    display: flex;
+    animation-delay: 1.17s;
+
+}
+
+.main_page_iphone{
+    position: absolute;
+    top: 160px;
+    left: 1px;
+    animation-delay: 1.56s;
+    float: left;
+
+}

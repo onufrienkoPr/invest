@@ -1,5 +1,5 @@
 .idea_cards {
-    margin-top: 50px;
+    margin-top: 10px;
     position: relative;
     height: 300px;
     width: 100%;
@@ -10,6 +10,11 @@
     color: #000;
     perspective: 300px;
     margin-bottom: 65px;
+}
+
+.back a{
+    text-decoration: none;
+    color: #a4a7a9;
 }
 
 .idea_cards:hover button {

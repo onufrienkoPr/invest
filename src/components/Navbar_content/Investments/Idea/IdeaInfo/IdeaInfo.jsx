@@ -1,9 +1,11 @@
 import React from 'react';
 import spacex from "../../../../../assets/images/spacex.svg";
 import s from "./IdeaInfo.module.css"
+import {NavLink} from "react-router-dom";
 
 const IdeaInfo = (props) => {
     return <>
+        <div className={s.back}><NavLink to={"/investments"}> ← Все инвестиционные идеи</NavLink></div>
         <div className={s.idea_cards}>
 
             <div className={s.inline}>

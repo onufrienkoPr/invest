@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {withRouter} from "react-router-dom";
 import {compose} from "redux";
 import Idea from "./Idea";
-import ContentCards from "../Content_cards/Content_cards";
 
 class IdeaContainer extends React.Component {
     componentDidMount() {
