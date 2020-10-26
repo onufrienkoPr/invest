@@ -1,21 +1,21 @@
 .main_page{
-
+    position: relative;
 }
 
 .main_page_table{
     justify-content: center;
     display: flex;
-    background-color: #F2F5F7;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 .main_page_table_about{
-    position: relative;
+    padding: 20px 0;
     display: flex;
-    height: 80px;
+    background-color: #F2F5F7;
 }
 
-.main_page_table_to{
+.main_page_table_to p{
     background-color: #F2F5F7;
+    padding: 0 15px;
 }
 
 .main_page_wrapper{
@@ -26,12 +26,14 @@
 
 .main_page_header{
     align-items: center;
+    animation:anim 3s;
+    position: relative;
 }
 
 .button{
     display: flex;
     align-items: center;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
 }
 
 .main_page_pictures{
@@ -44,7 +46,6 @@
 .main_page_macbook{
     display: flex;
     animation-delay: 1.17s;
-
 }
 
 .main_page_iphone{
@@ -53,5 +54,33 @@
     left: 1px;
     animation-delay: 1.56s;
     float: left;
+}
 
+.main_page_iphone img{
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+
+.button{
+    padding: 20px 0;
+}
+
+.button button{
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    width: 280px;
+    height: 65px;
+    border-radius: 14px;
+    border: none;
+    background-color: #42f590;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button:hover button {
+    background-color: #1fd675;
+    color: #ffffff;
+    transition: all 0.8s ease;
 }

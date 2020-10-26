@@ -2,8 +2,9 @@ import React from "react";
 import macbook from "../../assets/images/macbook.png";
 import iphone from "../../assets/images/iphone.png";
 import s from './MainPage.module.css'
+import {NavLink} from "react-router-dom";
 
-const MainPage = () => {
+const MainPage = (props) => {
     return (
         <div className={s.main_page}>
             <div className={s.main_page_wrapper}>
@@ -13,25 +14,25 @@ const MainPage = () => {
                 <div className={s.main_page_table}>
                     <div className={s.main_page_table_about}>
                         <div className={s.main_page_table_to}>
-                            <div>Выберите идею. Эксперты</div>
-                            <div>уже отобрали лучшие</div>
+                            <p>Выберите идею. Эксперты</p>
+                            <p>уже отобрали лучшие</p>
                         </div>
                         <div className={s.main_page_table_to}>
-                            <div>Попробуйте</div>
-                            <div>с $10</div>
+                            <p>Попробуйте</p>
+                            <p>с $10</p>
                         </div>
                         <div className={s.main_page_table_to}>
-                            <div>Составьте портфель</div>
-                            <div>из акций</div>
+                            <p>Составьте портфель</p>
+                            <p>из акций</p>
                         </div>
                         <div className={s.main_page_table_to}>
-                            <div>Получайте прибыль</div>
-                            <div>20—80% годовых</div>
+                            <p>Получайте прибыль</p>
+                            <p>20—80% годовых</p>
                         </div>
                     </div>
                 </div>
                 <div className={s.button}>
-                    <button>Начать инвестировать</button>
+                    <NavLink to={'/investments'}><button>Начать инвестировать</button></NavLink>
                 </div>
                 <div className={s.main_page_pictures}>
                     <div className={s.main_page_macbook}>

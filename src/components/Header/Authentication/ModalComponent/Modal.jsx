@@ -3,7 +3,7 @@ import s from './../Login.module.css';
 import ReactDOM from "react-dom";
 
 const Modal = forwardRef((props, ref) => {
-    const [display, setDisplay] = React.useState(true)
+    const [display, setDisplay] = React.useState(false);
 
     useImperativeHandle(ref, () => {
         return {
