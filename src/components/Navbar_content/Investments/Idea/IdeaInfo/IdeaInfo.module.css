@@ -6,7 +6,7 @@
     background-color: #F2F5F7;
     border-radius: 10px;
     padding: 30px 40px;
-    cursor: pointer;
+    cursor: inherit;
     color: #000;
     perspective: 300px;
     margin-bottom: 65px;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #F2F5F7;
-    margin-bottom: 120px;
+    margin-bottom: 10px;
 }
 
 .logodescname {
@@ -97,7 +97,48 @@
     font-size: 15px;
     margin-bottom: 25px;
 }
-
+.allgraph {
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    background-color: #F2F5F7;
+}
+.allgraph .qqq{
+    background-color: #F2F5F7;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.first {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 70px;
+    bottom: 0;
+    width: 200px;
+    height: 20px;
+    background-color: #e3e3e3;
+}
+.second {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 5px;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #e3e3e3;
+}
+.third {
+    text-align: center;
+    font-size: 14px;
+    margin-left: 5px;
+    bottom: 0;
+    width: 200px;
+    height: 90px;
+    background-color: #e3e3e3;
+}
 .iline {
     margin-bottom: 10px;
     color: rgba(0, 0, 0, 0.1);

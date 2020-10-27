@@ -25,7 +25,13 @@ const IdeaInfo = (props) => {
 
             </div>
 
-
+            <div className={s.allgraph}>
+                <div className={s.qqq}>
+                    <div className={s.first}>$450 млн</div>
+                    <div className={s.second}>$1,3 млрд</div>
+                    <div className={s.third}>$3,1 млрд</div>
+                </div>
+            </div>
             <div className={s.iline}></div>
             <div className={s.ipricestart}>
                 <div className={s.iprice}>Прогноз дохода
