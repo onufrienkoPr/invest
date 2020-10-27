@@ -25,9 +25,25 @@
     font-family: Geometria-Light, sans-serif;
     background-color: #f2f4f7;
     width: 73px;
-    height: 40px;
+    height: 43px;
     color: #000000;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.registration{
+    font-family: Geometria-Light, sans-serif;
+    background-color: rgba(49, 135, 238, 0.1);
+    color: #176CD4;
+    width: 110px;
+    height: 43px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-size: 15px;
     outline: none;
     border: 0;
@@ -148,5 +164,20 @@ button.addMoney:hover {
     outline: none;
     border: 0;
     width: 70px;
+    height: 40px;
+}
+
+.regbutton{
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #42f590;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    width: 110px;
     height: 40px;
 }

@@ -8,6 +8,7 @@ const Modal = forwardRef((props, ref) => {
     useImperativeHandle(ref, () => {
         return {
             openModal: () => open(),
+            openRegistration: () => open(),
             close: () => close()
         }
     });

@@ -6,6 +6,7 @@
     position: fixed;
     z-index: 1;
     height: 80px;
+    opacity: 0.99;
     border-bottom: 1px solid #f3f3f3;
 }
 .name-site{
@@ -40,10 +41,9 @@ li a{
 }
 
 .main-logo{
-    width: 252px;
+    width: 184px;
     display: flex;
     align-items: center;
-    margin-left: 10px;
 }
 .logo img {
     padding-top: 7px;

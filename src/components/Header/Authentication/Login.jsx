@@ -4,6 +4,7 @@ import Modal from "./ModalComponent/Modal";
 import {Field, reduxForm} from "redux-form";
 import {required} from "../../../utils/validators/validators";
 import {Input} from "../../common/FormsControls/FormsControls";
+import {register} from "../../../serviceWorker";
 
 // class Login extends React.Component {
 //     // state = {
@@ -51,26 +52,68 @@ const Login = () => {
     // }
     const modalRef = React.useRef();
 
-    const openModal = () =>{
+    const openModal = () => {
         modalRef.current.openModal();
     }
 
-    return(
+    const openModalRegistration = () => {
+        modalRef.current.openRegistration();
+    }
+
+    return (
         <div className={s.inline}>
             <button className={s.login} onClick={openModal}>Вход</button>
+            <button className={s.registration} onClick={openModalRegistration}>Регистрация</button>
             <Modal ref={modalRef}>
-                <button className={s.modalbutton} onClick={()=> modalRef.current.close()}>x</button>
-                <div className={s.entryreg}>
-                    <p className={s.entryparagraph}>Вход</p>
-                    <p className={s.regparagraph}>Регистрация</p></div>
-                <LoginReduxForm />
+                <button className={s.modalbutton} onClick={() => modalRef.current.close()}>x</button>
+                <LoginReduxForm/>
             </Modal>
         </div>
     )
 }
 const LoginForm = (props) => {
+
+    const [change, SetRegistration] = React.useState(false);
+
+    const registerOpen = () => {
+        SetRegistration(true);
+    }
+
+    const registerClose = () => {
+        SetRegistration(false);
+    }
+
+    if (!change) {
+        return (
+            <form onSubmit={props.handleSubmit} className={s.fullform}>
+                <div className={s.entryreg}>
+                    <p className={s.entryparagraph}>Вход</p>
+                    <p className={s.regparagraph} onClick={registerOpen}>Регистрация</p></div>
+                <div>
+                    <Field placeholder={"Логин/Почта"} name={'email'} component={Input}/>
+                </div>
+                <div>
+                    <Field placeholder={"Пароль"} name={'password'} component={Input}
+                           type={'password'}/>
+                </div>
+                <div>
+                    <button className={s.entrybutton}>Вход</button>
+                </div>
+            </form>
+        )
+    }
     return (
         <form onSubmit={props.handleSubmit} className={s.fullform}>
+            <div className={s.entryreg}>
+                <p className={s.entryparagraph}>Регистрация</p>
+                <p className={s.regparagraph} onClick={registerClose}>Вход</p>
+            </div>
+            <div>
+                <Field placeholder={"Имя"} name={'firstName'} component={Input}/>
+            </div>
+            <div>
+                <Field placeholder={"Фамилия"} name={'secondName'} component={Input}/>
+            </div>
             <div>
                 <Field placeholder={"Логин/Почта"} name={'email'} component={Input}/>
             </div>
@@ -79,10 +122,11 @@ const LoginForm = (props) => {
                        type={'password'}/>
             </div>
             <div>
-                <button className={s.entrybutton}>Вход</button>
+                <button className={s.regbutton}>Регистрация</button>
             </div>
         </form>
     )
+
 }
 
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
