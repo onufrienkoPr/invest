@@ -1,0 +1,58 @@
+.all {
+    margin-top: 260px;
+    margin-bottom: 70px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+.blocks {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 240px 240px 240px 320px 160px;
+    height: 133px;
+}
+
+.number {
+    font-family: Geometria, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.email {
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.deffont {
+    font-family: Geometria, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 2.3;
+}
+
+.social {
+    color: #a0a0a0;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.social img {
+    width: 20px;
+}
+
+.visa img {
+    width: 100px;
+}
+
+.policy {
+    font-size: 14px;
+    line-height: 1.5;
+}

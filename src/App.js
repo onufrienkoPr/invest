@@ -11,6 +11,7 @@ import MyInvestsContainer from "./components/Navbar_content_MyInvents/MyInvents/
 import ArhiveContainer from "./components/Navbar_content_MyInvents/MyInvents/Archive/ArchiveContainer";
 import MainPage from "./components/MainPage/MainPage";
 import IdeaContainer from "./components/Navbar_content/Investments/Idea/IdeaContainer";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
     return (
@@ -39,6 +40,7 @@ const App = () => {
                                render={() => <ArhiveContainer/>}/>
                     </Switch>
                 </div>
+                <Footer/>
             </div>
         </div>
     );
