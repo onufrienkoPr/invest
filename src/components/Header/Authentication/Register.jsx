@@ -1,33 +1,33 @@
-import React from 'react';
-import s from './Login.module.css';
+import React from "react";
+import s from "./Login.module.css";
 import Modal from "./ModalComponent/Modal";
-import {reduxForm} from "redux-form";
+import { reduxForm} from "redux-form";
 import {Loginization, Registration} from "./typeform";
 
-const Login = () => {
+const Register = () => {
 
     // const onSubmitFormData = (formData) => {// сюда собираются данные
     //     props.login(formData.email, formData.password, formData.rememberMe)
     // }
     const modalRef = React.useRef();
 
-    const openModal = () => {
-        modalRef.current.openModal();
+    const openModalRegistration = () => {
+        modalRef.current.openRegistration();
     }
 
     return (
         <div className={s.inline}>
-            <button className={s.login} onClick={openModal}>Вход</button>
+            <button className={s.registration} onClick={openModalRegistration}>Регистрация</button>
             <Modal ref={modalRef}>
                 <button className={s.modalbutton} onClick={() => modalRef.current.close()}>x</button>
-                <LoginReduxForm/>
+                <RegisterReduxForm/>
             </Modal>
         </div>
     )
 }
-const LoginForm = (props) => {
+const RegisterForm = (props) => {
 
-    const [change, SetRegistration] = React.useState(false);
+    const [change, SetRegistration] = React.useState(true);
 
     const registerOpen = () => {
         SetRegistration(true);
@@ -61,6 +61,6 @@ const LoginForm = (props) => {
 
 }
 
-const LoginReduxForm = reduxForm({form: 'login'}, {form: 'register'})(LoginForm)
+const RegisterReduxForm = reduxForm({form: 'register'}, {form: 'login'})(RegisterForm)
 
-export default Login;
+export default Register;
