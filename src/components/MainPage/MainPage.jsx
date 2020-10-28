@@ -3,8 +3,20 @@ import macbook from "../../assets/images/macbook.png";
 import iphone from "../../assets/images/iphone.png";
 import s from './MainPage.module.css'
 import {NavLink} from "react-router-dom";
+import Graphics from "./Graphics/Graphics";
 
 const MainPage = (props) => {
+
+    const [change, setChange] = React.useState(false);
+
+    const openPreIPO = () => {
+        setChange(true)
+    }
+
+    const openIPO = () => {
+        setChange(false)
+    }
+
     return (
         <div className={s.main_page}>
             <div className={s.main_page_wrapper}>
@@ -42,7 +54,14 @@ const MainPage = (props) => {
                         <img src={iphone}/>
                     </div>
                 </div>
-
+                <div className={s.graphics}>
+                    <div className={s.graphics_header}>
+                        <div className={s.result_invest}>Результаты инвестиций</div>
+                        <div className={s.result_ipo}><label onClick={openIPO}>IPO</label></div>
+                        <div className={s.result_pre_ipo}><label onClick={openPreIPO}>Pre-IPO</label></div>
+                    </div>
+                    <Graphics change={change}/>
+                </div>
             </div>
         </div>
     )

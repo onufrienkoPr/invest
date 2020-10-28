@@ -105,3 +105,35 @@
     color: #ffffff;
     transition: all 0.8s ease;
 }
+
+.graphics_header{
+    display: flex;
+    border-bottom: 1px solid #dddbdb;
+}
+
+.result_invest{
+    font-family: sans-serif;
+    font-size: 25px;
+
+}
+
+.result_ipo{
+    margin-left: auto;
+}
+
+.result_pre_ipo{
+    margin-left: 30px;
+}
+
+.result_ipo label{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.result_pre_ipo label{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
