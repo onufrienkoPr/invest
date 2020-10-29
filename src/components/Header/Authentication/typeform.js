@@ -1,9 +1,17 @@
 import s from "./Login.module.css";
-import {Field} from "redux-form";
+import {Field, reduxForm} from "redux-form";
 import {Input} from "../../common/FormsControls/FormsControls";
 import React from "react";
 
-    export const Loginization = (props) => {
+export const onSubmitFormDataLog = (formData) => {
+    console.log(formData.email, formData.password)
+}
+
+export const onSubmitFormDataReg = (formData) => {
+    console.log(formData.fname, formData.sname, formData.email, formData.password)
+}
+
+    const Loginization = (props) => {
         return (
             <form onSubmit={props.handleSubmit} className={s.fullform}>
                 <div>
@@ -20,14 +28,14 @@ import React from "react";
         )
     }
 
-    export const Registration = (props) => {
+    const Registration = (props) => {
         return (
             <form onSubmit={props.handleSubmit} className={s.fullform}>
                 <div>
-                    <Field placeholder={"Имя"} name={'firstName'} component={Input}/>
+                    <Field placeholder={"Имя"} name={'fname'} component={Input}/>
                 </div>
                 <div>
-                    <Field placeholder={"Фамилия"} name={'secondName'} component={Input}/>
+                    <Field placeholder={"Фамилия"} name={'sname'} component={Input}/>
                 </div>
                 <div>
                     <Field placeholder={"Логин/Почта"} name={'email'} component={Input}/>
@@ -42,3 +50,6 @@ import React from "react";
             </form>
         )
     }
+
+export const LoginizationReduxForm = reduxForm({form: 'login'})(Loginization)
+export const RegistrationReduxForm = reduxForm({form: 'register'})(Registration)

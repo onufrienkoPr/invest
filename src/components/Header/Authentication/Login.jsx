@@ -1,14 +1,10 @@
 import React from 'react';
 import s from './Login.module.css';
 import Modal from "./ModalComponent/Modal";
-import {reduxForm} from "redux-form";
-import {Loginization, Registration} from "./typeform";
+import {LoginizationReduxForm, onSubmitFormDataLog, onSubmitFormDataReg, RegistrationReduxForm} from "./typeform";
 
 const Login = () => {
 
-    // const onSubmitFormData = (formData) => {// сюда собираются данные
-    //     props.login(formData.email, formData.password, formData.rememberMe)
-    // }
     const modalRef = React.useRef();
 
     const openModal = () => {
@@ -20,7 +16,7 @@ const Login = () => {
             <button className={s.login} onClick={openModal}>Вход</button>
             <Modal ref={modalRef}>
                 <button className={s.modalbutton} onClick={() => modalRef.current.close()}>x</button>
-                <LoginReduxForm/>
+                <LoginForm/>
             </Modal>
         </div>
     )
@@ -44,7 +40,7 @@ const LoginForm = (props) => {
                     <p className={s.entryparagraph}>Вход</p>
                     <p className={s.regparagraph} onClick={registerOpen}>Регистрация</p>
                 </div>
-                <Loginization/>
+                <LoginizationReduxForm onSubmit={onSubmitFormDataLog}/>
             </div>
         )
     }
@@ -55,12 +51,9 @@ const LoginForm = (props) => {
                 <p className={s.entryparagraph}>Регистрация</p>
                 <p className={s.regparagraph} onClick={registerClose}>Вход</p>
             </div>
-            <Registration/>
+            <RegistrationReduxForm onSubmit={onSubmitFormDataReg}/>
         </div>
     )
-
 }
-
-const LoginReduxForm = reduxForm({form: 'login'}, {form: 'register'})(LoginForm)
 
 export default Login;
