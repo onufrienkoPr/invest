@@ -22,6 +22,42 @@ const Graphics = (props) => {
                     <div className={s.container_graphics_2015_text2}>
                         +8%
                     </div>
+                    <div className={s.container_graphics_2015_text3}>
+                        2015
+                    </div>
+                </div>
+                <div className={s.container_graphics_2016}>
+                    <div className={s.container_graphics_2015_text1}>
+                        10 идей
+                    </div>
+                    <div className={s.container_graphics_2015_text2}>
+                        +40%
+                    </div>
+                    <div className={s.container_graphics_2016_text3}>
+                        2016
+                    </div>
+                </div>
+                <div className={s.container_graphics_2017}>
+                    <div className={s.container_graphics_2015_text1}>
+                        12 идей
+                    </div>
+                    <div className={s.container_graphics_2015_text2}>
+                        +22%
+                    </div>
+                    <div className={s.container_graphics_2017_text3}>
+                        2017
+                    </div>
+                </div>
+                <div className={s.container_graphics_2018}>
+                    <div className={s.container_graphics_2015_text1}>
+                        32 идей
+                    </div>
+                    <div className={s.container_graphics_2015_text2}>
+                        +39%
+                    </div>
+                    <div className={s.container_graphics_2018_text3}>
+                        2018
+                    </div>
                 </div>
             </div>
     )}

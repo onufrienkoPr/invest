@@ -57,8 +57,8 @@ const MainPage = (props) => {
                 <div className={s.graphics}>
                     <div className={s.graphics_header}>
                         <div className={s.result_invest}>Результаты инвестиций</div>
-                        <div className={s.result_ipo}><label onClick={openIPO}>IPO</label></div>
-                        <div className={s.result_pre_ipo}><label onClick={openPreIPO}>Pre-IPO</label></div>
+                        <div className={s.result_ipo}><label onClick={openIPO} exact activeclassname={s.current}>IPO</label></div>
+                        <div className={s.result_pre_ipo}><label onClick={openPreIPO} exact activeclassname={s.current}>Pre-IPO</label></div>
                     </div>
                     <Graphics change={change}/>
                 </div>

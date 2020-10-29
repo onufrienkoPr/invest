@@ -49,6 +49,7 @@
     color: white;
     text-decoration: underline;
     font-size: 15px;
+    font-family: sans-serif;
     float: left;
     padding: 10px;
 }
@@ -62,7 +63,90 @@
     padding: 10px;
 }
 
+.container_graphics_2015_text3{
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
 .container_graphics_2015:hover{
     background: #3c6bee;
     transition: all 0.8s ease;
+    cursor: pointer;
+    color: #3c6bee;
+}
+
+.container_graphics_2016{
+    position: absolute;
+    bottom: 0;
+    margin-left: 353px;
+    height: 250px;
+    width: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    background-color: rgba(23, 109, 247, 0.7);
+}
+
+.container_graphics_2016_text3{
+    margin-top: 270px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.container_graphics_2016:hover{
+    background: #3c6bee;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    color: #3c6bee;
+}
+
+.container_graphics_2017{
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 556px;
+    height: 130px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(23, 109, 247, 0.7);
+}
+
+.container_graphics_2017_text3{
+    margin-top: 150px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.container_graphics_2017:hover{
+    background: #3c6bee;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    color: #3c6bee;
+}
+
+.container_graphics_2018{
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    right: 0;
+    height: 248px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(23, 109, 247, 0.7);
+}
+
+.container_graphics_2018_text3{
+    margin-top: 268px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.container_graphics_2018:hover{
+    background: #3c6bee;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    color: #3c6bee;
 }
