@@ -1,13 +1,21 @@
 .all {
     margin-top: 300px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
-.line {
+.lineo {
     height: 1px;
     width: 100%;
     background-color: #e8e8e8;
 }
+
+.linet {
+    margin-bottom: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
 
 .blocks {
     padding-top: 20px;
@@ -55,4 +63,27 @@
 .policy {
     font-size: 14px;
     line-height: 1.5;
+}
+
+.other {
+    display: flex;
+}
+
+.mobile {
+    cursor: pointer;
+    padding-top: 3px;
+    font-family: Geometria, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    word-spacing: 5px;
+    transition: all 0.3s ease;
+}
+
+.mobile:hover {
+    transition: all 0.3s ease;
+    color: #42f590;
+}
+
+.phone img {
+    width: 25px;
 }

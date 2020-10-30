@@ -1,5 +1,9 @@
 import React from "react";
 import macbook from "../../assets/images/macbook.png";
+import book from "../../assets/images/book.png";
+import booktwo from "../../assets/images/booktwo.png";
+import bookthree from "../../assets/images/bookthree.png";
+import bookfour from "../../assets/images/bookfour.png";
 import iphone from "../../assets/images/iphone.png";
 import ava from "../../assets/images/ava.png";
 import s from './MainPage.module.css'
@@ -104,7 +108,57 @@ const MainPage = (props) => {
                     </div>
                 </div>
                 <div>
-                    <div className={s.header_two_part}><h1>Награды STADIK RAZNESEM</h1></div>
+                    <div className={s.header_two_parttwo}><h1>Пишем книги о финансах</h1></div>
+                    <div className={s.flexallbook}>
+                        <div className={s.fullbookf}>
+                            <img className={s.book} src={book}/>
+                            <div className={s.descr}>
+                                <h4>Как инвестировать в IPO.</h4>
+                                <h4>Настольная книга...</h4>
+                            </div>
+                        </div>
+                        <div className={s.fullbooks}>
+                            <img className={s.book} src={booktwo}/>
+                            <div className={s.descr}>
+                                <h4>Как инвестировать в IPO.</h4>
+                                <h4>Настольная книга...</h4>
+                            </div>
+                        </div>
+                        <div className={s.fullbookt}>
+                            <img className={s.book} src={bookthree}/>
+                            <div className={s.descr}>
+                                <h4>Как инвестировать в IPO.</h4>
+                                <h4>Настольная книга...</h4>
+                            </div>
+                        </div>
+                        <div className={s.fullbooke}>
+                            <img className={s.book} src={bookfour}/>
+                            <div className={s.descr}>
+                                <h4>Как инвестировать в IPO.</h4>
+                                <h4>Настольная книга...</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={s.header_two_partthree}><h1>Отвечаем на любой вопрос про инвестиции</h1></div>
+                    <div className={s.questions}>
+                        <div className={s.soco}>
+                            <div className={s.socialicon}><img
+                                src={'https://unitedtraders.com/static/desktop/images/telegram-colored-137c79.svg'}/>
+                            </div>
+                            <div className={s.sss}>Telegram</div>
+                        </div>
+                        <div className={s.socs}>
+                            <div className={s.socialicon}><img
+                                src={'https://unitedtraders.com/static/desktop/images/youtube-colored-f623fb.svg'}/>
+                            </div>
+                            <div className={s.sss}>YouTube</div>
+                        </div>
+                        <div className={s.soct}>
+                            <div className={s.socialicon}><img
+                                src={'https://unitedtraders.com/static/desktop/images/phone-colored-ebfb7d.svg'}/></div>
+                            <div className={s.sss}>Позвонить</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

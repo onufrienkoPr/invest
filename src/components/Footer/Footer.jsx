@@ -4,7 +4,7 @@ import s from './Footer.module.css'
 const Footer = () => {
     return (
         <div className={s.all}>
-            <div className={s.line}></div>
+            <div className={s.lineo}></div>
             <div className={s.blocks}>
                 <div className={s.one}>
                     <div className={s.number}>+7 495 646-15-57</div>
@@ -38,7 +38,13 @@ const Footer = () => {
                     <div className={s.policy}>Политика приватности</div>
                 </div>
             </div>
-            <div className={s.line}></div>
+            <div className={s.linet}></div>
+            <div className={s.other}>
+                <div className={s.phone}><img
+                    src={'https://cdn.pixabay.com/photo/2017/01/13/01/22/mobile-1976104_960_720.png'}/>
+                </div>
+                <div className={s.mobile}>Мобильная версия сайта</div>
+            </div>
         </div>
     )
 }

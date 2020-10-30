@@ -1,9 +1,9 @@
-.main_page{
+.main_page {
     position: relative;
-    margin-bottom: 1000px;
+    margin-bottom: 1370px;
 }
 
-.main_page_table{
+.main_page_table {
     justify-content: center;
     display: flex;
     padding: 10px 0;
@@ -12,28 +12,29 @@
     animation: showImg 1s linear forwards;
     animation-delay: 0.5s;
 }
-.main_page_table_about{
+
+.main_page_table_about {
     border-radius: 10px;
     padding: 20px 0;
     display: flex;
     background-color: #F2F5F7;
 }
 
-.main_page_table_to p{
+.main_page_table_to p {
     background-color: #F2F5F7;
     padding: 0 15px;
 }
 
-.main_page_wrapper{
+.main_page_wrapper {
     height: 1200px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
-.main_page_header{
+.main_page_header {
     align-items: center;
-    animation:anim 3s;
+    animation: anim 3s;
     position: relative;
     opacity: 0;
     animation: showImg 1s linear forwards;
@@ -45,7 +46,7 @@
     }
 }
 
-.button{
+.button {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -55,14 +56,14 @@
     animation-delay: 1s;
 }
 
-.main_page_pictures{
+.main_page_pictures {
     position: relative;
     display: flex;
     justify-content: center;
     padding: 10px 0;
 }
 
-.main_page_macbook{
+.main_page_macbook {
     position: absolute;
     margin-left: 150px;
     display: flex;
@@ -72,7 +73,7 @@
     animation-delay: 1.5s;
 }
 
-.main_page_iphone img{
+.main_page_iphone img {
     position: absolute;
     top: 160px;
     left: 1px;
@@ -80,14 +81,14 @@
     animation: showImg 1s linear forwards;
     animation-delay: 2s;
     float: left;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.button{
+.button {
     padding: 20px 0;
 }
 
-.button button{
+.button button {
     font-size: 17px;
     font-weight: 600;
     outline: none;
@@ -107,72 +108,95 @@
     transition: all 0.8s ease;
 }
 
-.graphics_header{
+.graphics_header {
     display: flex;
     border-bottom: 1px solid #dddbdb;
 }
 
-label:active{
+label:active {
     color: black;
 }
 
-.graphics_header label:hover{
+.graphics_header label:hover {
     color: black;
     cursor: pointer;
 }
 
-.result_invest{
+.result_invest {
     font-family: sans-serif;
     font-size: 30px;
     font-weight: bold;
 }
 
-.result_ipo{
+.result_ipo {
     margin-left: auto;
 }
 
-.result_pre_ipo{
+.result_pre_ipo {
     margin-left: 30px;
 }
 
-.result_ipo label{
+.result_ipo label {
     color: #176CD4;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
-.result_pre_ipo label{
+.result_pre_ipo label {
     color: #176CD4;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
-.graphics{
-    margin-bottom: 40px;
+.graphics {
+    margin-bottom: 110px;
 }
 
-.header_two_part h1{
+.header_two_part h1 {
     font-size: 30px;
     text-align: left;
 }
 
-.container_two_part{
+.container_two_part {
     width: 710px;
     font-size: 15px;
 }
 
-.container_ava{
+.header_two_parttwo {
+    margin-bottom: 60px;
+    width: 710px;
+    font-size: 15px;
+}
+
+.header_two_parttwo h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.header_two_partthree {
+    margin-bottom: 30px;
+    width: 960px;
+    font-size: 15px;
+}
+
+.header_two_partthree h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.container_ava {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
-.container_ava_1{
-    margin-right: 10px;
-    height: 250px;
-    width: 250px;
+.container_ava_1 {
+    margin-right: 26px;
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     background-color: #eeebeb;
     overflow: hidden;
@@ -181,7 +205,7 @@ label:active{
     align-items: center;
 }
 
-.container_ava_2{
+.container_ava_2 {
     margin-right: 10px;
     height: 250px;
     width: 25%;
@@ -190,7 +214,7 @@ label:active{
     background-color: #eeebeb;
 }
 
-.container_ava_3{
+.container_ava_3 {
     border-radius: 50%;
     margin-right: 10px;
     height: 250px;
@@ -199,7 +223,7 @@ label:active{
     background-color: #eeebeb;
 }
 
-.container_ava_4{
+.container_ava_4 {
     margin-right: 10px;
     height: 250px;
     width: 25%;
@@ -208,11 +232,11 @@ label:active{
     background-color: #eeebeb;
 }
 
-.ava_1{
+.ava_1 {
     background-color: #eeebeb;
 }
 
-.ava_1 img{
+.ava_1 img {
     left: 0;
     background-color: #eeebeb;
     height: 200px;
@@ -222,13 +246,13 @@ label:active{
     -webkit-transition: all 0.5s ease-out;
 }
 
-.ava_1 img:hover{
+.ava_1 img:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
 
-.ava_text_name{
+.ava_text_name {
     margin-top: 5px;
     text-align: center;
     color: #176CD4;
@@ -237,11 +261,122 @@ label:active{
     margin-bottom: 7px;
 }
 
-.ava_text_position{
+.ava_text_position {
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.container_ava_full_1{
+.container_ava_full_1 {
     cursor: pointer;
+}
+
+.book {
+    width: 152px;
+    height: 280px;
+}
+
+.fullbookf {
+    font-weight: 100;
+    width: 300px;
+}
+
+.fullbooks {
+    font-weight: 100;
+    width: 300px;
+}
+
+.fullbookt {
+    font-weight: 100;
+    width: 300px;
+}
+
+.fullbooke {
+    font-weight: 100;
+    width: 235px;
+}
+
+.flexallbook {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.descr {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.flexallbook img {
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.fullbookf:hover img {
+    transform: rotate3d(0, 2, 0, 20deg);
+    transition: all 0.8s ease;
+}
+
+.fullbooks:hover img {
+    transform: rotate3d(0, 2, 0, 20deg);
+    transition: all 0.8s ease;
+}
+
+.fullbookt:hover img {
+    transform: rotate3d(0, 2, 0, 20deg);
+    transition: all 0.8s ease;
+}
+
+.fullbooke:hover img {
+    transform: rotate3d(0, 2, 0, 20deg);
+    transition: all 0.8s ease;
+}
+
+.fullbookf:hover h4 {
+    color: #3571bf;
+    transition: all 0.8s ease;
+}
+
+.fullbooks:hover h4 {
+    color: #439a63;
+    transition: all 0.8s ease;
+}
+
+.fullbookt:hover h4 {
+    color: #7b33d9;
+    transition: all 0.8s ease;
+}
+
+.fullbooke:hover h4 {
+    color: #b44545;
+    transition: all 0.8s ease;
+}
+
+.questions {
+    color: #176CD4;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.soco {
+    margin-right: 20px;
+    display: flex;
+}
+
+.socs {
+    margin-right: 20px;
+    display: flex;
+}
+
+.soct {
+    display: flex;
+}
+
+.socs img {
+    width: 35px;
+}
+
+.sss {
+    padding-top: 2px;
+    margin-left: 7px;
 }
