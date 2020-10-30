@@ -1,6 +1,7 @@
 import React from "react";
 import macbook from "../../assets/images/macbook.png";
 import iphone from "../../assets/images/iphone.png";
+import ava from "../../assets/images/ava.png";
 import s from './MainPage.module.css'
 import {NavLink} from "react-router-dom";
 import Graphics from "./Graphics/Graphics";
@@ -44,7 +45,9 @@ const MainPage = (props) => {
                     </div>
                 </div>
                 <div className={s.button}>
-                    <NavLink to={'/investments'}><button>Начать инвестировать</button></NavLink>
+                    <NavLink to={'/investments'}>
+                        <button>Начать инвестировать</button>
+                    </NavLink>
                 </div>
                 <div className={s.main_page_pictures}>
                     <div className={s.main_page_macbook}>
@@ -57,10 +60,51 @@ const MainPage = (props) => {
                 <div className={s.graphics}>
                     <div className={s.graphics_header}>
                         <div className={s.result_invest}>Результаты инвестиций</div>
-                        <div className={s.result_ipo}><label onClick={openIPO} exact activeclassname={s.current}>IPO</label></div>
-                        <div className={s.result_pre_ipo}><label onClick={openPreIPO} exact activeclassname={s.current}>Pre-IPO</label></div>
+                        <div className={s.result_ipo}><label onClick={openIPO} exact
+                                                             activeclassname={s.current}>IPO</label></div>
+                        <div className={s.result_pre_ipo}><label onClick={openPreIPO} exact
+                                                                 activeclassname={s.current}>Pre-IPO</label></div>
                     </div>
                     <Graphics change={change}/>
+                </div>
+                <div className={s.header_two_part}><h1>Инвестируем на американском рынке 11 лет</h1></div>
+                <div className={s.container_two_part}>
+                    В основе нашей команды профессиональные трейдеры, которые объединились в 2009 году
+                    и основали United Traders, инвестиционную компанию. Наша штаб-квартира находится
+                    в Москве. Сотрудники работают по всему миру от Калифорнии до Комсомольска-на-Амуре.
+                </div>
+                <div className={s.container_ava}>
+                    <div className={s.container_ava_full_1}>
+                        <div className={s.container_ava_1}>
+                            <div className={s.ava_1}><img src={ava}/></div>
+                        </div>
+                        <div className={s.ava_text_name}>Ольга Кумысова</div>
+                        <div className={s.ava_text_position}>Сооснователь, Business Development</div>
+                    </div>
+                    <div className={s.container_ava_full_1}>
+                        <div className={s.container_ava_1}>
+                            <div className={s.ava_1}><img src={ava}/></div>
+                        </div>
+                        <div className={s.ava_text_name}>Ольга Кумысова</div>
+                        <div className={s.ava_text_position}>Сооснователь, Business Development</div>
+                    </div>
+                    <div className={s.container_ava_full_1}>
+                        <div className={s.container_ava_1}>
+                            <div className={s.ava_1}><img src={ava}/></div>
+                        </div>
+                        <div className={s.ava_text_name}>Ольга Кумысова</div>
+                        <div className={s.ava_text_position}>Сооснователь, Business Development</div>
+                    </div>
+                    <div className={s.container_ava_full_1}>
+                        <div className={s.container_ava_1}>
+                            <div className={s.ava_1}><img src={ava}/></div>
+                        </div>
+                        <div className={s.ava_text_name}>Ольга Кумысова</div>
+                        <div className={s.ava_text_position}>Сооснователь, Business Development</div>
+                    </div>
+                </div>
+                <div>
+                    <div className={s.header_two_part}><h1>Награды STADIK RAZNESEM</h1></div>
                 </div>
             </div>
         </div>
